@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <h1 class="text-center my-3">To do List</h1>
+    <section class="row justify-content-center"">
+      <form action="" class="col-8">
+        <p>Nueva Tarea</p>
+        <div class="input-group mb-3">
+          <input
+            id="newTask"
+            type="text"
+            class="form-control"
+            aria-describedby="addTask"
+          />
+          <button class="btn btn-success" type="button" id="addTask">Button</button>
+        </div>
+      </form>
+      <div class="row col-12 justify-content-center">
+        <div id="listInfo" class="col-4">
+          <p>Total: <span id="totalTask">0</span></p>
+          <p>Realizadas: <span id="completedTask">0</span></p>
+        </div>
+        <div id="taskList" class="col-4 task-grid">
+          <div class="id-list">
+            <p>ID</p>
+            <ul id="idList" ></ul>  
+          </div>
+          <div class="name-list">
+            <p>Tarea</p>
+            <ul id="taskNameList" ></ul>
+          </div>
+          <div class="check-delete ">
+            <p> Status</p>
+            <ul id="checkDelete">
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

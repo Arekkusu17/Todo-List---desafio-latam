@@ -1,0 +1,39 @@
+.task-grid {
+  display: grid;
+  grid-template-areas: "id-list name-list check-delete";
+  grid-template-columns: 30px 230px 130px;
+}
+
+.id-list {
+  grid-area: id-list;
+}
+
+.name-list {
+  grid-area: name-list;
+}
+
+.check-delete {
+  grid-area: check-delete;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  height: 40px;
+}
+
+a {
+  cursor: pointer;
+}
+
+.form-check {
+  margin-bottom: 0;
+}
+
+.checked {
+  color: rgb(36, 36, 255);
+}
