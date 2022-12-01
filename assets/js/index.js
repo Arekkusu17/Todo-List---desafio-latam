@@ -25,9 +25,8 @@ const writeTasks = (arr) => {
       newNameTask += `<li>${obj[Object.keys(obj)[1]]}</li>`;
     }
     newIdTask += `<li>${obj[Object.keys(obj)[0]]}</li>`;
-    //newNameTask += `<li>${task.taskName}</li>`;
     newChecks += `<div class="form-check">
-    <input onclick="updateTask(event,${
+    <input onclick="updateTask(${
       obj[Object.keys(obj)[0]]
     })" class="form-check-input" type="checkbox" value="" id="checkbox-${
       obj[Object.keys(obj)[0]]
@@ -49,7 +48,6 @@ writeTasks(tasks);
 button.addEventListener("click", (e) => {
   e.preventDefault();
   id += 1;
-  console.log("here");
   const newTask = inputTask.value;
   tasks.push({ id: id, taskName: newTask, completed: false });
   inputTask.value = "";
@@ -68,7 +66,7 @@ const deleteTask = (id) => {
   writeTasks(tasks);
 };
 
-const updateTask = (event, id) => {
+const updateTask = (id) => {
   const checkbox = document.getElementById(`checkbox-${id}`);
   const index = tasks.findIndex((element) => element.id == id);
 
