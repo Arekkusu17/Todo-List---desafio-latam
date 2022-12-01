@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <h1 class="text-center my-3">To do List</h1>
+    <h1 class="text-center my-3">To do List 📝</h1>
     <section class="row justify-content-center"">
-      <form action="" class="col-8">
-        <p>Nueva Tarea</p>
+      <form action="" class="col-md-9 col-11 ">
+        <p><strong>Nueva Tarea</strong></p>
         <div class="input-group mb-3">
           <input
             id="newTask"
@@ -25,28 +25,26 @@
             class="form-control"
             aria-describedby="addTask"
           />
-          <button class="btn btn-success" type="button" id="addTask">Button</button>
+          <button class="btn btn-success" type="button" id="addTask">Nueva Tarea</button>
         </div>
       </form>
-      <div class="row col-12 justify-content-center">
-        <div id="listInfo" class="col-4">
-          <p>Total: <span id="totalTask">0</span></p>
-          <p>Realizadas: <span id="completedTask">0</span></p>
+      <div class="tasks-info row col-12 justify-content-center  gap-md-5 gap-2">
+        <div id="listInfo" class=" col-md-3 col-sm-8 ">
+          <p>Total: <strong><span id="totalTask">0</span></strong></p>
+          <p>Realizadas: <strong><span id="completedTask">0</span></strong></p>
         </div>
-        <div id="taskList" class="col-4 task-grid">
+        <div id="taskList" class="col-md-5 col-11 col-sm-8  task-grid">
           <div class="id-list">
-            <p>ID</p>
+            <p><strong>ID</strong></p>
             <ul id="idList" ></ul>  
           </div>
           <div class="name-list">
-            <p>Tarea</p>
+            <p><strong>Tarea</strong></p>
             <ul id="taskNameList" ></ul>
           </div>
           <div class="check-delete ">
-            <p> Status</p>
-            <ul id="checkDelete">
-              
-            </ul>
+            <p><strong>Status</strong></p>
+            <ul id="checkDelete"></ul>
           </div>
         </div>
       </div>
